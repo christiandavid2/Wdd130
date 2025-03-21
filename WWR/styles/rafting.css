@@ -1,0 +1,133 @@
+header {
+    display: flex;
+    justify-content: space-between;  /* Space out logo and navigation */
+    align-items: center;  /* Align items vertically */
+    padding: 20px;  /* Add padding for spacing */
+    background-color: #f5f5f5;  /* Light background color */
+}
+
+.logo img {
+    width: 120px;  /* Adjust logo size */
+    height: auto;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-left: 20px;  /* Space out the navigation items */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;  /* Dark color for links */
+    font-size: 1rem;
+}
+
+nav ul li a:hover {
+    color: #0073e6;  /* Change color on hover */
+}
+
+footer img {
+    width: 80px;  /* Set the size of the icons */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Add some space between icons */
+}
+/* Define CSS Variables */
+:root {
+    --primary-color: #2a9d8f;
+    --secondary-color: #264653;
+    --accent-color: #e76f51;
+    --background-color: #f4f4f4;
+    --text-color: #333;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    color: var(--primary-color);
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* Social Media Image Links */
+.social-links a {
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.hero article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+.hero article img {
+    float: right;
+    margin-left: 10px;
+}
+
+/* Box Class */
+.box {
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
+/* Aside Section */
+aside {
+    width: 20em;
+    text-align: center;
+    position: relative;
+}
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
+/* Profile Image Styling */
+main img {
+    float: right;
+}

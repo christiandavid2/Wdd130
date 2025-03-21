@@ -1,0 +1,98 @@
+:root {
+    --primary-color: darkblue;
+    --secondary-color: #eee;
+    --text-color: #333;
+    --border-color: rgb(0, 0, 0, 0.2);
+    --highlight-color: white;
+    --shadow-color: gray;
+    
+    --padding-small: 10px;
+    --padding-medium: 20px;
+    --padding-large: 1rem;
+    
+    --img-border-width: 1px;
+    --img-width-small: 150px;
+    --img-width-medium: 200px;
+    --img-width-full: 150%;
+    
+    --box-shadow: 0 0 30px var(--shadow-color);
+    --max-content-width: 840px;
+}
+
+nav {
+    background-color: var(--primary-color);
+    padding: var(--padding-small);
+}
+nav a {
+    color: var(--highlight-color);
+    display: block;
+    padding: var(--padding-medium);
+}
+h1 {
+    color: var(--primary-color);
+}
+img {
+    width: var(--img-width-full);
+    height: auto;
+    border: var(--img-border-width) solid var(--primary-color);
+    padding: 2px;
+    box-shadow: var(--box-shadow);
+}
+p {
+    padding: var(--padding-small);
+}
+main {
+    max-width: var(--max-content-width);
+}
+aside {
+    width: 20rem;
+    margin: var(--padding-large);
+    border: var(--img-border-width) solid var(--border-color);
+    padding: var(--padding-large);
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+}
+aside img {
+    width: var(--img-width-medium);
+    height: auto;
+}
+main img {
+    width: var(--img-width-small);
+    height: auto;
+}
+p { 
+    padding: 0; 
+}
+footer {
+    margin-top: 15px;
+    border-top: var(--img-border-width) solid #000;
+    text-align: center;
+}
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+/*class selector*/
+.box{
+    margin: 1rem;
+    border: 1px solid rgb(0 0 0 / 1%);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+aside{
+    width: 20rem;
+    text-align: center;
+} 
+main img {
+    /*you must lirely will have ther declaration here */
+    float: right;
+}
+
+aside h2{
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
